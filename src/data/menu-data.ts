@@ -3,7 +3,7 @@ import { IMenuItem, IMenuItemTwo } from "@/types/menu-d-t";
 const menu_data_one: IMenuItem[] = [
   {
     id: 1,
-    label: "Home",
+    label: "Inicio",
     url: "/",
     home_menu: true,
     submenu: [
@@ -39,22 +39,20 @@ const menu_data_one: IMenuItem[] = [
       },
     ],
   },
-  { id: 2, label: "About Us", url: "/about" },
   {
     id: 3,
-    label: "Room",
+    label: "Distritos",
     url: "/room-1",
     submenu: [
-      { id: 1, label: "Room One", url: "/room-1" },
-      { id: 2, label: "Room Two", url: "/room-2" },
-      { id: 3, label: "Room Three", url: "/room-3" },
-      { id: 4, label: "Room Details One", url: "/room-details/6722f5a4bf533ecf1e775960" },
-      { id: 5, label: "Room Details Two", url: "/room-details-2/6722f5a4bf533ecf1e775960" },
-      { id: 6, label: "Room Details Three", url: "/room-details-3/6722f5a4bf533ecf1e775960" },
+      { id: 1, label: "Hojancha", url: "/room-1" },
+      { id: 2, label: "Monte Romo", url: "/room-2" },
+      { id: 3, label: "Huacas", url: "/room-3" },
+      { id: 4, label: "Matambú", url: "/room-details/6722f5a4bf533ecf1e775960" },
+      { id: 5, label: "Puerto Carrillo", url: "/room-details-2/6722f5a4bf533ecf1e775960" },
     ],
   },
-  { id: 4, label: "Gallery", url: "/gallery" },
-  {
+  { id: 4, label: "Galería", url: "/gallery" },
+  /* {
     id: 5,
     label: "Blog",
     url: "/blog-grid",
@@ -64,8 +62,8 @@ const menu_data_one: IMenuItem[] = [
       { id: 3, label: "Blog Details", url: "/blog-details/1" },
       { id: 4, label: "Blog Details Two", url: "/blog-details-2/1" },
     ],
-  },
-  {
+  }, */
+  /* {
     id: 6,
     label: "Pages",
     url: "#",
@@ -81,8 +79,9 @@ const menu_data_one: IMenuItem[] = [
       { id: 10, label: "Checkout", url: "/checkout" },
       { id: 12, label: "Privacy Policy", url: "/privacy-policy" },
     ],
-  },
-  { id: 7, label: "Contact", url: "/contact" },
+  }, */
+  { id: 2, label: "Nosotros", url: "/about" },
+  { id: 7, label: "Contáctanos", url: "/contact" },
 ];
 
 
