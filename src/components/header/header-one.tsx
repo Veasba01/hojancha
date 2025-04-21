@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import NavMenus from "./components/nav-menus";
 import HeaderTopArea from "./components/header-top-area";
-import logo from "@/assets/img/hojancha/somoshojanchalogo.png";
+import logo from "@/assets/img/hojancha/logo2.png";
 import HeaderStickyProvider from "./components/header-sticky-provider";
 import HeaderSearch from "../form/header-search";
 import OffcanvasBtn from "../offcanvas/offcanvas-btn";

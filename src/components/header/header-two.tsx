@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavMenus from "./components/nav-menus";
-import logo from '@/assets/img/hojancha/somoshojanchalogo.png';
+import logo2 from '@/assets/img/hojancha/logo2.png';
 import HeaderStickyProvider from "./components/header-sticky-provider";
 import OffcanvasBtn from "../offcanvas/offcanvas-btn";
 
@@ -16,7 +16,7 @@ export default function HeaderTwo() {
                             <div className="col-xl-2 col-lg-2 col-6">
                                 <div className="tp-header-logo">
                                     <Link href="/">
-                                        <Image data-width="138" src={logo} alt="logo" width={108}/>
+                                        <Image data-width="138" src={logo2} alt="logo" width={108}/>
                                     </Link>
                                 </div>
                             </div>

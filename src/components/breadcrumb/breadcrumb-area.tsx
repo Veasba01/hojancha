@@ -5,7 +5,7 @@ type IProps = {
 };
 export default function BreadcrumbArea({subtitle='Our Luxurious Resort & Accommodations',title='Explore our Rooms'}:IProps) {
     return (
-        <div className="tp-breadcrumb-area tp-breadcrumb-spacing bg-position" style={{ backgroundImage: 'url(/assets/img/breadcrumb/02.jpg)' }}>
+        <div className="tp-breadcrumb-area tp-breadcrumb-spacing bg-position" style={{ backgroundImage: 'url(/assets/img/hojancha/monte_romo.webp)' }}>
             <div className="container p-relative">
                 <div className="row">
                     <div className="col-lg-12">

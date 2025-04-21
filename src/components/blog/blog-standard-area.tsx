@@ -112,7 +112,7 @@ export default function BlogStandardArea() {
                         className="tp-btn-square tp-btn-square-yellow"
                         href={`/blog-details/${item.id}`}
                       >
-                        Read More
+                        Leer Más
                         <span className="ml-5">
                           <UpArrow />
                         </span>

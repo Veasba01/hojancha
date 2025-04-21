@@ -11,7 +11,7 @@ export default function BlogGridPage() {
     return (
         <div>
             {/* breadcrumb area start */}
-            <BreadcrumbArea subtitle="News & Insights" title="News & Insights" />
+            <BreadcrumbArea subtitle="Hojancha" title="Distritos" />
             {/* breadcrumb area end */}
 
             {/* blog sidebar area start */}

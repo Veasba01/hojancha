@@ -79,10 +79,10 @@ export const blog_postbox_data: IBlog[] = [
   {
     id: 7,
     date: "November 07, 2024",
-    title: "Maintaining the highest work Environment.",
+    title: "Distrito de Hojancha, Guanacaste.",
     description:
-      "Aliquam eget turpis vehicula, auctor elit ac, rutrum turpis. Donec enim elit, interdum eu tellus quis, fermentum vehicula dolor. Praesent in quam erat. Nam rutrum justo vitae eros efficitur accumsan. Phasellus scelerisque, massa ut venenatis tristique",
-    imgSrc: "/assets/img/blog/blog-sidebar/thumb.jpg",
+      "Hojancha es un distrito y cantón de la provincia de Guanacaste, Costa Rica. Se encuentra ubicado en la región norte del país y es conocido por su belleza natural y su rica cultura. El cantón de Hojancha es famoso por su producción de café, así como por sus paisajes montañosos y su biodiversidad. La zona es hogar de diversas especies de flora y fauna, lo que la convierte en un destino popular para los amantes de la naturaleza y el ecoturismo.",
+    imgSrc: "/assets/img/hojancha/hojancha.webp",
     authorImg: "/assets/img/blog/blog-sidebar/user.png",
     authorName: "Jane Cooper",
     readTime: "4 Min Read",
@@ -90,41 +90,46 @@ export const blog_postbox_data: IBlog[] = [
   {
     id: 8,
     date: "December 11, 2024",
-    title: "Identifying your travel goals and preferences.",
+    title: "Distrito de Monte Romo, Guanacaste.",
     description:
-      "Aliquam eget turpis vehicula, auctor elit ac, rutrum turpis. Donec enim elit, interdum eu tellus quis, fermentum vehicula dolor. Praesent in quam erat. Nam rutrum justo vitae eros efficitur accumsan. Phasellus scelerisque, massa ut venenatis tristique",
-    imgSrc: "/assets/img/blog/blog-sidebar/thumb2.jpg",
+      "Monte Romo es un distrito y cantón de la provincia de Guanacaste, Costa Rica. Se encuentra ubicado en la región norte del país y es conocido por su belleza natural y su rica cultura. El cantón de Monte Romo es famoso por su producción de café, así como por sus paisajes montañosos y su biodiversidad. La zona es hogar de diversas especies de flora y fauna, lo que la convierte en un destino popular para los amantes de la naturaleza y el ecoturismo.",
+    imgSrc: "/assets/img/hojancha/monte_romo.webp",
     authorImg: "/assets/img/blog/02.png",
-    image_slider:[
-      '/assets/img/blog/blog-sidebar/thumb2.jpg',
-      '/assets/img/blog/blog-sidebar/thumb3.jpg',
-      '/assets/img/blog/blog-sidebar/thumb4.jpg',
-    ],
     authorName: "Vera Parker",
     readTime: "5 Min Read",
   },
   {
     id: 9,
     date: "December 15, 2024",
-    title: "We'll delve into the art of seamless hotel booking.",
+    title: "Distrito de Huacas, Guanacaste.",
     description:
-      "Aliquam eget turpis vehicula, auctor elit ac, rutrum turpis. Donec enim elit, interdum eu tellus quis, fermentum vehicula dolor. Praesent in quam erat. Nam rutrum justo vitae eros efficitur accumsan. Phasellus scelerisque, massa ut venenatis tristique",
-    imgSrc: "/assets/img/blog/blog-sidebar/thumb3.jpg",
+      "Huacas es un distrito y cantón de la provincia de Guanacaste, Costa Rica. Se encuentra ubicado en la región norte del país y es conocido por su belleza natural y su rica cultura. El cantón de Huacas es famoso por su producción de café, así como por sus paisajes montañosos y su biodiversidad. La zona es hogar de diversas especies de flora y fauna, lo que la convierte en un destino popular para los amantes de la naturaleza y el ecoturismo.",
+    imgSrc: "/assets/img/hojancha/huacas.webp",
     authorImg: "/assets/img/blog/03.png",
     authorName: "Alexander Smith",
-    video_id:'-WRZI63emjs',
     readTime: "6 Min Read",
   },
   {
     id: 10,
     date: "December 20, 2024",
-    title: "Weighing the pros and cons of each choice.",
+    title: "Distrito de Matambú, Guanacaste.",
     description:
-      "Aliquam eget turpis vehicula, auctor elit ac, rutrum turpis. Donec enim elit, interdum eu tellus quis, fermentum vehicula dolor. Praesent in quam erat. Nam rutrum justo vitae eros efficitur accumsan. Phasellus scelerisque, massa ut venenatis tristique",
-    imgSrc: "/assets/img/blog/blog-sidebar/thumb4.jpg",
+      "Matambú es un distrito y cantón de la provincia de Guanacaste, Costa Rica. Se encuentra ubicado en la región norte del país y es conocido por su belleza natural y su rica cultura. El cantón de Matambú es famoso por su producción de café, así como por sus paisajes montañosos y su biodiversidad. La zona es hogar de diversas especies de flora y fauna, lo que la convierte en un destino popular para los amantes de la naturaleza y el ecoturismo.",
+    imgSrc: "/assets/img/hojancha/matambu.webp",
     authorImg: "/assets/img/blog/blog-sidebar/user.png",
     authorName: "Brandon Scott",
     readTime: "7 Min Read",
+  },
+  {
+    id: 11,
+    date: "December 25, 2024",
+    title: "Distrito de Puerto Carrillo, Guanacaste.",
+    description:
+      "Puerto Carrillo es un distrito y cantón de la provincia de Guanacaste, Costa Rica. Se encuentra ubicado en la región norte del país y es conocido por su belleza natural y su rica cultura. El cantón de Puerto Carrillo es famoso por su producción de café, así como por sus paisajes montañosos y su biodiversidad. La zona es hogar de diversas especies de flora y fauna, lo que la convierte en un destino popular para los amantes de la naturaleza y el ecoturismo.",
+    imgSrc: "/assets/img/hojancha/puertocarrillo.webp",
+    authorImg: "/assets/img/blog/02.png",
+    authorName: "Sophia Brown",
+    readTime: "8 Min Read",
   },
 ]
 

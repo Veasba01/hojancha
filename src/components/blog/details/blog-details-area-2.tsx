@@ -5,7 +5,6 @@ import PostboxMoreNavigation from "./postbox-more-navigation";
 import PostboxAuthorArea from "./postbox-author-area";
 import PostboxCommentArea from "./postbox-comment-area";
 import BlogCommentForm from "@/components/form/blog-comment-form";
-import details_bg from "@/assets/img/blog/blog-details/thumb.jpg";
 import details_bg_2 from "@/assets/img/blog/blog-details/thumb02.jpg";
 
 type IProps = {
@@ -21,27 +20,25 @@ export default function BlogDetailsAreaTwo({ blog }: IProps) {
             <div className="tp-postbox-wrapper">
               <div className="tp-postbox-top mb-80">
                 <div className="tp-postbox-thumb">
-                  <Image className="w-100" src={details_bg} alt="thumb" style={{ height: 'auto' }} />
+                  <Image className="w-100 rounded" src={blog.imgSrc} alt="thumb" width={800} height={600} style={{ height: 'auto' }} />
                 </div>
               </div>
               <div className="tp-postbox-main">
                 <div className="row">
                   <div className="col-xxl-2 col-xl-2 col-lg-2">
-                    <div className="tp-postbox-left-social tp-postbox-left-social-3">
+                    {/* <div className="tp-postbox-left-social tp-postbox-left-social-3">
                       <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
                       <a className="svg" href="#"><XSvgThree /></a>
                       <a href="#">
                         <LinkSvg />
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="col-xxl-8 col-xl-10 col-lg-10">
                     <div className="tp-postbox-main-wrapper">
                       <div className="tp-postbox-details-content-wrapper">
                         <div className="tp-postbox-details-content-para mb-50">
-                          <p className="first-para mb-10">Nunc gravida velit quis nibh posuere tristique. Integer tincidunt dignissim orci, vel consectetur lacus placerat a. Curabitur ultrices finibus euismod. Sed convallis magna id finibus iaculis. Cras a nulla nunc. Vestibulum suscipit eget nibh in imperdiet. Suspendisse et eros facilisis, vulputate nulla in, pharetra diam.</p>
-                          <p className="mb-25">Proin faucibus nec mauris a sodales, sed elementum mi tincidunt. Sed eget viverra egestas nisi consequat. Fusce sodales augue a accumsan. </p>
-                          <p>I do not know why she surrendered - exhaustion, probably - but one afternoon in 1980 I was allowed. It was the remake of Jens Lyn with Max von Sydow, you could see the strings in the spaceships when they flew, and it was wonderful . Five friends in the cinema darkness. We only had money for four tickets, so we took turns sitting on each others laps.</p>
+                          <p className="first-para mb-10">{blog.description}</p>
                         </div>
                         <div className="tp-postbox-details-thumb mb-50">
                         <Image className="w-100" src={details_bg_2} alt="thumb" style={{ height: 'auto' }} />
@@ -69,7 +66,7 @@ export default function BlogDetailsAreaTwo({ blog }: IProps) {
                           </div>
                         </div>
                         <div className="tp-postbox-features mb-60">
-                          <h3 className="tp-postbox-features-title mb-10">Procedere</h3>
+                          <h3 className="tp-postbox-features-title mb-10">Caracteristicas</h3>
                           <div className="tp-postbox-details-content-para mb-30">
                             <p>Successful people do not see failures as failures. They see them as important learning lessons. Lessons that are capable of giving them insights to prevent such mistakes from happening again. By adopting this mindset of turning each failure into a learning lesson or opportunity.</p>
                           </div>
@@ -85,10 +82,10 @@ export default function BlogDetailsAreaTwo({ blog }: IProps) {
                           <div className="row align-items-center">
                             <div className="col-lg-8 col-md-8">
                               <div className="tagcloud tagcloud-details">
-                                <a href="#">Education</a>
-                                <a href="#">Life Style</a>
-                                <a href="#">React</a>
-                                <a href="#">Application</a>
+                                <a href="#">Montaña</a>
+                                <a href="#">Diversidad</a>
+                                <a href="#">Cultura</a>
+                                <a href="#">Zonaz Verdes</a>
                               </div>
                             </div>
                             <div className="col-lg-4 col-md-4">
@@ -104,26 +101,26 @@ export default function BlogDetailsAreaTwo({ blog }: IProps) {
                         </div>
 
                         {/* postbox navigation */}
-                        <PostboxMoreNavigation />
+                        {/* <PostboxMoreNavigation /> */}
                         {/* postbox navigation */}
 
                         {/* postbox author area */}
-                        <PostboxAuthorArea />
+                       {/*  <PostboxAuthorArea /> */}
                         {/* postbox author area */}
 
                         {/* postbox comment area start */}
-                        <PostboxCommentArea />
+                        {/* <PostboxCommentArea /> */}
                         {/* postbox comment area end */}
 
-                        <div className="tp-postbox-comment-form">
+                        {/* <div className="tp-postbox-comment-form">
                           <h3 className="tp-postbox-comment-form-title">Leave a comment</h3>
                           <p className="mb-40">Your email address will not be published. Required fields are marked *</p>
                           <div className="tp-postbox-comment-input">
-                            {/* form start */}
+                            
                             <BlogCommentForm btn_2={true} />
-                            {/* form end */}
+                            
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>

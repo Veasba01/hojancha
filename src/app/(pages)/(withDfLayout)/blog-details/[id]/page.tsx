@@ -26,15 +26,12 @@ export default async function BlogDetailsPage({params}: {params: IParams}) {
           {/* breadcrumb area start */}
           <BreadcrumbFour
             title={blog.title}
-            authorName={blog.authorName}
-            date={blog.date}
-            authorImg={blog.authorImg}
           />
           {/* breadcrumb area end */}
 
           {/* postbox big img area start */}
           <div className="tp-postbox-big-thumb jarallax fix p-relative">
-            <Image className="w-100 jarallax-img" src={big_img} alt="thumb" style={{height:'auto'}}/>
+            <Image className="w-100" width={1800} height={1012} src={blog.imgSrc} alt="thumb" />
          </div>
           {/* postbox big img area end */}
 

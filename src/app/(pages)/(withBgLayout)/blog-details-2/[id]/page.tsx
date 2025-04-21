@@ -21,7 +21,7 @@ export default async function BlogDetailsPageTwo({ params }: { params: IParams})
             {blog ? (
                 <>
                     {/* breadcrumb area start */}
-                    <BreadcrumbFive title={blog.title} authorName={blog.authorName} date={blog.date} authorImg={blog.authorImg} />
+                    <BreadcrumbFive title={blog.title} />
                     {/* breadcrumb area end */}
 
                     {/* blog details area start */}
