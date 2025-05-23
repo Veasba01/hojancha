@@ -1,10 +1,6 @@
 import Image from "next/image";
 import { IBlog } from "@/types/blog-d-t";
 import { LinkSvg, QuoteIcon, XSvgThree } from "@/components/svg";
-import PostboxMoreNavigation from "./postbox-more-navigation";
-import PostboxAuthorArea from "./postbox-author-area";
-import PostboxCommentArea from "./postbox-comment-area";
-import BlogCommentForm from "@/components/form/blog-comment-form";
 import details_bg_2 from "@/assets/img/blog/blog-details/thumb02.jpg";
 
 type IProps = {

@@ -10,8 +10,8 @@ export default async function DestinationArea() {
                 <div className="row align-items-end">
                     <div className="col-12 col-sm-7">
                         <div className="tp-section-title-wrap mb-40">
-                            <h5 className="tp-section-title-two-pre">Top places &</h5>
-                            <h2 className="tp-section-title-two">Popular destinations</h2>
+                            <h5 className="tp-section-title-two-pre">Cantón Hojancha</h5>
+                            <h2 className="tp-section-title-two">Distritos</h2>
                         </div>
                     </div>
                     <div className="col-12 col-sm-5">

@@ -12,7 +12,7 @@ export default function GalleryPage() {
         <div>
 
             {/* breadcrumb area start */}
-            <BreadcrumbArea subtitle="Unique Historical Charm" title="Luxury Hotel Gallery" />
+            <BreadcrumbArea subtitle="Naturaleza y Belleza" title="Galeria Hojancha" />
             {/* breadcrumb area end */}
 
             {/* gallery area start */}

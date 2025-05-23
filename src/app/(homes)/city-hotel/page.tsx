@@ -1,15 +1,13 @@
 import { Metadata } from "next";
 import HeroBannerTwo from "@/components/hero-banner/hero-banner-2";
-import DestinationArea from "@/components/destination/destination-area";
+
 import AboutAreaTwo from "@/components/about/about-area-2";
-import CityHotels from "@/components/hotel/city-hotels";
+
 import AdventuresArea from "@/components/adventures/adventures-area";
 import BannerArea from "@/components/banner/banner-area";
-import TestimonialAreaTwo from "@/components/testimonial/testimonial-area-2";
-import BrandArea from "@/components/brand/brand-area";
-import ConnectedArea from "@/components/connected/connected-area";
+
 import CtaArea from "@/components/cta/cta-area";
-import { getCityHotels } from "@/api/hotel";
+
 
 
 export const metadata: Metadata = {
@@ -17,7 +15,6 @@ export const metadata: Metadata = {
 };
 
 export default async function CityHotelPage() {
-  const cityHotels = await getCityHotels();
   return (
     <main>
 
@@ -27,7 +24,7 @@ export default async function CityHotelPage() {
 
 
       {/* destination area start */}
-      <DestinationArea/>
+      {/* <DestinationArea/> */}
       {/* destination area end */}
 
       {/* about area start */}
@@ -35,7 +32,7 @@ export default async function CityHotelPage() {
       {/* about area end */}
 
       {/* city hotels start */}
-      <CityHotels cityHotels={cityHotels}/>
+      {/* <CityHotels cityHotels={cityHotels}/> */}
       {/* city hotels end */}
 
       {/* adventure area start */}
@@ -47,15 +44,15 @@ export default async function CityHotelPage() {
       {/* banner area end */}
 
       {/* testimonial area start */}
-      <TestimonialAreaTwo/>
+      {/* <TestimonialAreaTwo/> */}
       {/* testimonial area end */}
 
       {/* brand area start */}
-      <BrandArea/>
+      {/* <BrandArea/> */}
       {/* brand area end */}
 
       {/* connected area start */}
-      <ConnectedArea/>
+      {/* <ConnectedArea/> */}
       {/* connected area end */}
 
       {/* cta area start */}

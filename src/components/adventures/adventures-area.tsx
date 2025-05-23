@@ -15,22 +15,22 @@ const adventureData = [
         id: 1,
         iconSrc: adventures_1,
         iconSvg: <AdventureHolidayOne />,
-        label: "Explore",
-        title: "Luxury<br /> Holidays",
+        label: "Explora",
+        title: "Hojancha<br /> Central",
     },
     {
         id: 2,
         iconSrc: adventures_2,
         iconSvg: <AdventureHolidayTwo />,
-        label: "Explore",
-        title: "Nature<br /> & Wildlife",
+        label: "Descubre",
+        title: "Monte Romo<br /> & Huacas",
     },
     {
         id: 3,
         iconSrc: adventures_3,
         iconSvg: <AdventureHolidayThree />,
-        label: "Explore",
-        title: "Adventure<br /> & Sport",
+        label: "Visita",
+        title: "Matambú &<br /> P. Carrillo",
     },
 ];
 export default function AdventuresArea() {
@@ -69,14 +69,13 @@ export default function AdventuresArea() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-5 col-lg-6 mb-30 wow fadeInLeft" data-wow-delay=".4s" data-wow-duration="1s">
-                        <div className="tp-adventures-title-wrap mb-55 mr-65">
-                            <h5 className="tp-section-title-two-pre mb-10">Get Connected</h5>
-                            <h2 className="tp-section-title-two fs-40 lh-115 mb-20">Where Do{" "}
+                    <div className="col-xl-5 col-lg-6 mb-30 wow fadeInLeft" data-wow-delay=".4s" data-wow-duration="1s">                        <div className="tp-adventures-title-wrap mb-55 mr-65">
+                            <h5 className="tp-section-title-two-pre mb-10">Conecta con la Naturaleza</h5>
+                            <h2 className="tp-section-title-two fs-40 lh-115 mb-20">¿Qué Distrito de{" "}
                                 <Image src={rain_box} alt="rainbox" />
                                 <br />
-                                You Want to Explore?</h2>
-                            <p className="tp-adventures-para">A trusted travel guider based in London and working since 2003. I guided more than <b>3.2k+</b> tourists my whole lovely country.</p>
+                                Hojancha Quieres Explorar?</h2>
+                            <p className="tp-adventures-para">Hojancha te ofrece una experiencia única en Costa Rica desde 1848. Con más de <b>175 años</b> de historia, nuestros 5 distritos albergan una rica biodiversidad y tradiciones cafetaleras auténticas.</p>
                         </div>
                         <div className="row">
 
