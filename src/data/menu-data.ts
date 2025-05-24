@@ -45,9 +45,9 @@ const menu_data_one: IMenuItem[] = [
     url: "/blog-sidebar",
     submenu: [
       { id: 1, label: "Hojancha", url: "/blog-details/7" },
-      { id: 2, label: "Monte Romo", url: "/blog-details-2/8" },
+      { id: 2, label: "Monte Romo", url: "/blog-details/8" },
       { id: 3, label: "Huacas", url: "/blog-details/9" },
-      { id: 4, label: "Matambú", url: "/blog-details-2/10" },
+      { id: 4, label: "Matambú", url: "/blog-details/10" },
       { id: 5, label: "Puerto Carrillo", url: "/blog-details/11" },
     ],
   },
