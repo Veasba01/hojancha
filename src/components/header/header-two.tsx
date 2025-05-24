@@ -32,7 +32,7 @@ export default function HeaderTwo() {
                             <div className="col-xl-2 col-lg-2 col-6">
                                 <div className="tp-header-action d-flex justify-content-end">
                                     <div className="tp-header-btn-wrap d-none d-lg-block ml-30">
-                                        <Link className="tp-header-btn" href="/contact">Juega Ahora</Link>
+                                        <Link className="tp-header-btn" href="/game">Juega Ahora</Link>
                                     </div>
                                     <div className="tp-header-2-menu-bar  tp-header-3-menu-bar d-lg-none tp-header-menu-btn-black">
                                         <OffcanvasBtn/>

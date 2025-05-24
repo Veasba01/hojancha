@@ -1,7 +1,7 @@
 import BackToTop from "@/components/common/back-to-top";
 import HeaderTwo from "@/components/header/header-two";
-import MainProvider from "@/components/provider/main-provider";
 import FooterTwo from "@/components/footer/footer-two";
+import MainProvider from "@/components/provider/main-provider";
 
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -10,7 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <HeaderTwo/>
             {children}
             <FooterTwo />
-            <BackToTop/>
+            <BackToTop />
         </MainProvider>
     )
 }

@@ -85,7 +85,7 @@ export default function BlogStandardArea() {
                   )}
                   <div className="tp-postbox-content">
                     <div className="tp-postbox-meta mb-10">
-                      <span>
+                      {/* <span>
                         <a href="#">
                           <Image
                             src={item.authorImg}
@@ -95,7 +95,7 @@ export default function BlogStandardArea() {
                           />
                           {item.authorName}
                         </a>
-                      </span>
+                      </span> */}
                       <span className="dvdr"></span>
                       <span>
                         <ClockSvg /> {item.readTime}

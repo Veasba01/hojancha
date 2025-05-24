@@ -11,7 +11,7 @@ import CtaArea from "@/components/cta/cta-area";
 
 
 export const metadata: Metadata = {
-  title: "City Hotel - Housey Resort and Hotel Next JS Template",
+  title: "Hojancha - Naturaleza y Belleza",
 };
 
 export default async function CityHotelPage() {

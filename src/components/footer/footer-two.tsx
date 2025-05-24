@@ -27,7 +27,7 @@ export default function FooterTwo() {
              </div>
              <div className="col-lg-4 col-md-6 col-sm-6 mb-30">
                 <div className="tp-footer-widget-content tp-footer-widget-content-2 ml-100">
-                   <h4 className="tp-footer-widget-title mb-20 text-white">Distritos de Hojancha</h4>
+                   <h4 className="tp-footer-widget-title mb-20 text-black">Distritos de Hojancha</h4>
                    <ul>
                       <li><a href="/distrito/hojancha-central">Hojancha Central</a></li>
                       <li><a href="/distrito/monte-romo">Monte Romo</a></li>
@@ -39,7 +39,7 @@ export default function FooterTwo() {
              </div>
              <div className="col-lg-3 col-md-6 col-sm-6 mb-30">
                 <div className="tp-footer-widget-content tp-footer-widget-content-2">
-                   <h4 className="tp-footer-widget-title mb-20 text-white">Explora</h4>
+                   <h4 className="tp-footer-widget-title mb-20 text-black">Explora</h4>
                    <ul>
                       <li><a href="/about">Acerca de Hojancha</a></li>
                       <li><a href="/activities">Actividades</a></li>
