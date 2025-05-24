@@ -10,7 +10,7 @@ export default function RelatedBlogs() {
                 <div className="row">
                     <div className="col-12">
                         <div className="tp-blog-details-title-wrap mb-25">
-                            <h2 className="tp-blog-details-title">You may also like</h2>
+                            <h2 className="tp-blog-details-title">Tambien te Puede Gustar</h2>
                         </div>
                     </div>
                     {related_blogs.map(blog => (

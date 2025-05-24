@@ -20,10 +20,10 @@ export default function BlogItem({ blog,top_cls='' }: IProps) {
                 <p>{blog.description}</p>
             </div>
             <div className="tp-blog-user-wrap d-flex align-items-center justify-content-between">
-                <div className="tp-blog-user">
+                {/* <div className="tp-blog-user">
                     <Image src={blog.authorImg} alt="author" width={30} height={30} />
                     <span>{blog.authorName}</span>
-                </div>
+                </div> */}
                 <div className="tp-blog-read">
                     <span>
                         <i className="fa-regular fa-clock"></i> {blog.readTime}

@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { all_blogs } from "@/data/blog-data";
 import BreadcrumbFour from "@/components/breadcrumb/breadcrumb-four";
-import big_img from '@/assets/img/blog/blog-details/bg.jpg';
-import BlogDetailsArea from "@/components/blog/details/blog-details-area";
+import BlogDetailsAreaHojancha from "@/components/blog/details/blog-details-area-hojancha";
 import RelatedBlogs from "@/components/blog/details/related-blogs";
 
 type IParams = Promise<{ id: string }>;
@@ -36,7 +35,7 @@ export default async function BlogDetailsPage({params}: {params: IParams}) {
           {/* postbox big img area end */}
 
           {/* blog details area start */}
-          <BlogDetailsArea blog={blog} />
+          <BlogDetailsAreaHojancha blog={blog} />
           {/* blog details area end */}
 
           {/* related blogs area start */}
