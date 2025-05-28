@@ -43,9 +43,9 @@ const parisienne = Parisienne({
 });
 
 export const metadata: Metadata = {
-  title: "Housey Resort and Hotel Next JS Template",
+  title: "Somos Hojancha",
   description:
-    "Housey Resort and Hotel Booking Next js Template is the ultimate solution for showcasing your hotel, resort, or vacation rental in a modern and visually stunning way.",
+    "Hojancha es un cantón de la provincia de Guanacaste, Costa Rica. Es conocido por su rica cultura, tradiciones y paisajes naturales.",
 };
 
 export default function RootLayout({
