@@ -2,51 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import styles from './game-area.module.css';
-
-// Importar las imágenes de Hojancha que ya tenemos
-import puerto_carrillo from "@/assets/img/gellary/hojancha/Puerto Carrillo editada (1).png";
-import matambu from "@/assets/img/gellary/hojancha/Matambu 3-2-3 (1).jpg";
-import hojancha_vista from "@/assets/img/gellary/hojancha/img_20171027_153533.jpg";
-import monte_romo from "@/assets/img/gellary/hojancha/DMonte Romo Modificado (1).png";
-
-const gameData = [
-    {
-        id: 1,
-        district: "Puerto Carrillo",
-        image: puerto_carrillo,
-        question: "¿Cuál es la principal atracción de Puerto Carrillo?",
-        options: ["Montañas", "Playa", "Café", "Volcanes"],
-        correct: 1,
-        fact: "Puerto Carrillo es famoso por sus hermosas playas en el Pacífico costarricense."
-    },
-    {
-        id: 2,
-        district: "Monte Romo",
-        image: monte_romo,
-        question: "¿Qué caracteriza principalmente a Monte Romo?",
-        options: ["Playas", "Paisajes montañosos", "Ríos", "Desiertos"],
-        correct: 1,
-        fact: "Monte Romo se destaca por sus impresionantes paisajes montañosos y vistas panorámicas."
-    },
-    {
-        id: 3,
-        district: "Matambú",
-        image: matambu,
-        question: "¿Cuántos distritos tiene el cantón de Hojancha?",
-        options: ["3", "4", "5", "6"],
-        correct: 2,
-        fact: "Hojancha tiene 5 distritos: Hojancha Central, Monte Romo, Huacas, Matambú y Puerto Carrillo."
-    },
-    {
-        id: 4,
-        district: "Hojancha Central",
-        image: hojancha_vista,
-        question: "¿En qué año fue fundado Hojancha?",
-        options: ["1840", "1848", "1855", "1860"],
-        correct: 1,
-        fact: "Hojancha fue fundado en 1848, con más de 175 años de historia costarricense."
-    }
-];
+import { gameData } from "./game-questions";
 
 export default function GameArea() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
