@@ -1,5 +1,16 @@
-// Puedes reemplazar el placeholder por una imagen real más adelante
-const placeholder = "https://placehold.co/600x300";
+// Imágenes locales del juego de Hojancha
+const hojanchaImages = {
+    hojancha: "/assets/img/hojancha/juego/Hojancha.jpg",
+    agricultura: "/assets/img/hojancha/juego/Agricultura.jpg",
+    agricultor: "/assets/img/hojancha/juego/Agricultor.jpg",
+    monteRomo: "/assets/img/hojancha/juego/MonteRomo.jpg",
+    ceramicasChorotega: "/assets/img/hojancha/juego/CerámicasChorotega.jpg",
+    figurasBarro: "/assets/img/hojancha/juego/FiguraBarro.jpg",
+    marimba: "/assets/img/hojancha/juego/marimba1.jpg",
+    maiz: "/assets/img/hojancha/juego/Maíz.jpg",
+    fabianaGranados: "/assets/img/hojancha/juego/FabinaGranados.jpg",
+    rios: "/assets/img/hojancha/juego/Riós.jpg"
+};
 
 export interface GameQuestion {
     id: number;
@@ -49,11 +60,11 @@ export const gameData: GameQuestion[] = [
         correct: 1,
         fact: "Hojancha fue fundado en 1848, con más de 175 años de historia costarricense."
     },
-    // Nuevas preguntas reemplazadas según indicaciones
+    // Nuevas preguntas con imágenes actualizadas
     {
         id: 5,
         district: "General",
-        image: placeholder,
+        image: hojanchaImages.hojancha,
         question: "¿Cuántos distritos conforman el cantón de Hojancha?",
         options: ["3", "5", "4", "6"],
         correct: 1,
@@ -62,7 +73,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 6,
         district: "General",
-        image: placeholder,
+        image: hojanchaImages.agricultura,
         question: "¿Qué actividad económica ha sido históricamente importante en Hojancha?",
         options: ["Minería", "Agricultura", "Pesca comercial", "Industria textil"],
         correct: 1,
@@ -71,7 +82,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 7,
         district: "General",
-        image: placeholder,
+        image: hojanchaImages.hojancha,
         question: "¿Cuál es el distrito cabecera del cantón de Hojancha?",
         options: ["Monte Romo", "Puerto Carrillo", "Matambú", "Hojancha"],
         correct: 3,
@@ -80,7 +91,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 8,
         district: "Monte Romo",
-        image: placeholder,
+        image: hojanchaImages.monteRomo,
         question: "¿Cuál de los siguientes describe mejor a Monte Romo?",
         options: ["Distrito costero", "Distrito indígena", "Zona montañosa y rural", "Zona industrial"],
         correct: 2,
@@ -89,7 +100,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 9,
         district: "Matambú",
-        image: placeholder,
+        image: hojanchaImages.ceramicasChorotega,
         question: "¿Cuál de las siguientes manifestaciones culturales es representativa del distrito indígena de Matambú?",
         options: ["Bailes africanos", "Cerámica artesanal chorotega", "Máscaras boruca", "Pinturas rupestres"],
         correct: 1,
@@ -98,7 +109,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 10,
         district: "Matambú",
-        image: placeholder,
+        image: hojanchaImages.figurasBarro,
         question: "¿Qué expresión artística se conserva como parte de la herencia chorotega en Matambú?",
         options: ["Pintura mural", "Tejido con palma", "Escultura en piedra", "Elaboración de figuras en barro"],
         correct: 3,
@@ -107,7 +118,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 11,
         district: "Matambú",
-        image: placeholder,
+        image: hojanchaImages.rios,
         question: "¿Qué elemento natural es considerado sagrado por la cultura chorotega en zonas como Matambú?",
         options: ["El mar", "Los volcanes", "Los ríos y montañas", "Las cavernas"],
         correct: 2,
@@ -116,7 +127,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 12,
         district: "Monte Romo/Huacas",
-        image: placeholder,
+        image: hojanchaImages.maiz,
         question: "¿Qué tipo de gastronomía tradicional se puede encontrar en festividades de Monte Romo o Huacas?",
         options: ["Comida afrocaribeña", "Asados argentinos", "Platillos a base de maíz y cerdo", "Pescados crudos estilo japonés"],
         correct: 2,
@@ -125,7 +136,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 13,
         district: "General",
-        image: placeholder,
+        image: hojanchaImages.marimba,
         question: "¿Qué instrumento tradicional suele acompañar las actividades culturales en Guanacaste, incluyendo Hojancha?",
         options: ["Violín", "Marimba", "Acordeón", "Flauta traversa"],
         correct: 1,
@@ -134,7 +145,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 14,
         district: "General",
-        image: placeholder,
+        image: hojanchaImages.agricultor,
         question: "¿Qué día se celebra el Día del Agricultor en Costa Rica, de gran relevancia para zonas rurales como Monte Romo?",
         options: ["15 de mayo", "4 de octubre", "3 de agosto", "10 de septiembre"],
         correct: 0,
@@ -143,7 +154,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 15,
         district: "General",
-        image: placeholder,
+        image: hojanchaImages.hojancha,
         question: "¿Qué se celebra el 19 de marzo en comunidades como Hojancha?",
         options: ["Día del Agricultor", "Día de San José, patrono de la Iglesia", "Día de la Marimba", "Día de la Independencia"],
         correct: 1,
@@ -152,7 +163,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 16,
         district: "General",
-        image: placeholder,
+        image: hojanchaImages.agricultura,
         question: "¿Qué actividad tradicional se realiza en Hojancha el 1º de mayo para conmemorar el Día del Trabajador?",
         options: ["Desfile de antorchas", "Festival de la Madera", "Desfile de boyeros con carretas típicas", "Montadera de toros"],
         correct: 2,
@@ -161,7 +172,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 17,
         district: "Puerto Carrillo",
-        image: placeholder,
+        image: hojanchaImages.rios,
         question: "¿Qué tipo de turismo es más importante en Puerto Carrillo?",
         options: ["Ecoturismo en montaña", "Turismo arqueológico", "Turismo de playa", "Turismo religioso"],
         correct: 2,
@@ -170,7 +181,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 18,
         district: "General",
-        image: placeholder,
+        image: hojanchaImages.hojancha,
         question: "¿Quién fue Luis Vara Carro dentro del desarrollo del cantón de Hojancha?",
         options: ["Un escultor indígena", "Primer alcalde electo", "Uno de los impulsores para que Hojancha se convirtiera en cantón", "Fundador de la escuela de Puerto Carrillo"],
         correct: 2,
@@ -179,16 +190,16 @@ export const gameData: GameQuestion[] = [
     {
         id: 19,
         district: "General",
-        image: placeholder,
-        question: "¿Por qué es recordado Francisco “Chico” Quesada en Hojancha?",
+        image: hojanchaImages.agricultor,
+        question: "¿Por qué es recordado Francisco Chico Quesada en Hojancha?",
         options: ["Por ser poeta y músico", "Por ser un líder indígena", "Por ser un campesino símbolo de humildad y trabajo", "Por ser el primer alcalde del cantón"],
         correct: 2,
-        fact: "Francisco “Chico” Quesada es símbolo de humildad y trabajo en Hojancha."
+        fact: "Francisco Chico Quesada es símbolo de humildad y trabajo en Hojancha."
     },
     {
         id: 20,
         district: "Monte Romo",
-        image: placeholder,
+        image: hojanchaImages.agricultura,
         question: "¿Qué actividad se asocia con Don Pablo Sibaja en las historias de Monte Romo?",
         options: ["La pesca", "El pastoreo de caballos", "La boyeada tradicional con carretas", "La minería artesanal"],
         correct: 2,
@@ -197,7 +208,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 21,
         district: "General",
-        image: placeholder,
+        image: hojanchaImages.hojancha,
         question: "¿Quién fue conocida por ayudar a nacer a generaciones de hojancheños?",
         options: ["Doña Lucha", "Doña Crucita", "Doña Clara", "Doña Marta"],
         correct: 1,
@@ -206,7 +217,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 22,
         district: "General",
-        image: placeholder,
+        image: hojanchaImages.hojancha,
         question: "¿Por qué es recordada la maestra Alice en Hojancha?",
         options: ["Por ser alcaldesa del cantón", "Por enseñar con dedicación a varias generaciones", "Por ser poeta y escritora", "Por fundar el hospital local"],
         correct: 1,
@@ -215,7 +226,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 23,
         district: "General",
-        image: placeholder,
+        image: hojanchaImages.fabianaGranados,
         question: "¿Qué logro obtuvo Fabiana Granados Herrera en 2013?",
         options: ["Ganó el Premio Nacional de Cultura", "Fue electa Miss Costa Rica y clasificó en Miss Universo", "Fue la primera alcaldesa de Hojancha", "Fundó la Escuela Victoriano Mena Mena"],
         correct: 1,
@@ -224,7 +235,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 24,
         district: "General",
-        image: placeholder,
+        image: hojanchaImages.hojancha,
         question: "¿Qué cargo ocupó Ángel Marín Madrigal en 1974?",
         options: ["Gobernador de Guanacaste", "Presidente del primer Concejo Municipal de Hojancha", "Director de la Escuela Victoriano Mena Mena", "Fundador del Ebais local"],
         correct: 1,
@@ -233,7 +244,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 25,
         district: "General",
-        image: placeholder,
+        image: hojanchaImages.hojancha,
         question: "¿Qué rol desempeñó Diego Barrantes Gamboa en Hojancha?",
         options: ["Primer alcalde del cantón", "Primer Ejecutivo Municipal de Hojancha", "Fundador del primer periódico local", "Director del hospital cantonal"],
         correct: 1,
@@ -242,7 +253,7 @@ export const gameData: GameQuestion[] = [
     {
         id: 26,
         district: "General",
-        image: placeholder,
+        image: hojanchaImages.hojancha,
         question: "¿Por qué es significativo el nombre Victoriano Mena Mena en Hojancha?",
         options: ["Fue el primer médico del cantón", "Fue un educador destacado y la escuela local lleva su nombre", "Fundó la primera iglesia del cantón", "Fue un reconocido poeta local"],
         correct: 1,

@@ -1,6 +1,6 @@
 import BackToTop from "@/components/common/back-to-top";
 import HeaderTwo from "@/components/header/header-two";
-import FooterArea from "@/components/footer/footer-area";
+import FooterTwo from "@/components/footer/footer-two";
 import MainProvider from "@/components/provider/main-provider";
 
 
@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <MainProvider bodyBg="tp-home-3-bg">
             <HeaderTwo/>
             {children}
-            <FooterArea style_2={true} top_bg="tp-falured-bg-2"/>
+            <FooterTwo />
             <BackToTop/>
         </MainProvider>
     )
