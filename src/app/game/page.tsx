@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import BreadcrumbArea from '@/components/breadcrumb/breadcrumb-area';
 import GameArea from '@/components/game';
 
 
@@ -13,10 +12,7 @@ export default function GamePage() {
     return (
         <>
             {/* breadcrumb area start */}
-            <BreadcrumbArea
-                title="Juego de Hojancha"
-                subtitle="Descubre y Aprende"
-            />
+    
             {/* breadcrumb area end */}
 
             {/* game area start */}

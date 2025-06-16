@@ -4,7 +4,7 @@ const menu_data_one: IMenuItem[] = [
   {
         id: 1,
         label: "Inicio",
-        url: "/city-hotel",
+        url: "/home",
       },
   {
     id: 3,
@@ -63,11 +63,10 @@ const menu_data_two:IMenuItemTwo[] = [
         label: "Modern Hotel",
         url: "/",
         img: "/assets/img/menu-demo/demo.jpg",
-      },
-      {
+      },      {
         id: 2,
-        label: "City Hotel",
-        url: "/city-hotel",
+        label: "Hojancha",
+        url: "/home",
         img: "/assets/img/menu-demo/demo-2.jpg",
       },
       {

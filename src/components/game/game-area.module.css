@@ -1,233 +1,660 @@
-/* Estilos para el componente de juego de Hojancha */
+/* Estilos tipo Kahoot para niños de 7-12 años */
 
-.gameProgress {
-    display: inline-block;
-    background: linear-gradient(135deg, #2E7D32, #4CAF50);
-    color: white;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-weight: 600;
-    font-size: 14px;
-    margin-top: 10px;
+/* Container principal */
+.kahootContainer {
+  min-height: 100vh;
+  background: url('/assets/img/hojancha/game_background.jpg') center center/cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  padding: 20px 0;
 }
 
-.gameCard {
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
+.kahootContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
-.gameCard:hover {
+.kahootContainer > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== PANTALLA DE BIENVENIDA ===== */
+.welcomeScreen {
+  background: white;
+  border-radius: 30px;
+  padding: 60px 40px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  animation: bounceIn 1s ease;
+}
+
+.gameIcon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+
+.gameTitle {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #333;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease-in-out infinite;
+}
+
+.gameSubtitle {
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.gameInfo {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f8f9fa;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.infoIcon {
+  font-size: 1.5rem;
+}
+
+.startButton {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+}
+
+.startButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
+}
+
+/* ===== HEADER DEL JUEGO ===== */
+.gameHeader {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 20px 0;
+  margin-bottom: 30px;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.questionCounter {
+  background: linear-gradient(135deg, #4ecdc4, #44a08d);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
+.timerCircle {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+  animation: pulse 1s infinite;
+}
+
+.timerText {
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.scoreDisplay {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  color: #333;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* ===== SECCIÓN DE PREGUNTA ===== */
+.questionSection {
+  margin-bottom: 30px;
+}
+
+.questionImage {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.districtBadge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.questionText {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.questionText h2 {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ===== ÁREA DE RESPUESTAS ===== */
+.answersSection {
+  margin-bottom: 40px;
+}
+
+.answersGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.answerButton {
+  background: white;
+  border: 4px solid transparent;
+  border-radius: 20px;
+  padding: 30px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  min-height: 100px;
+}
+
+.answerButton:hover:not(:disabled) {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.answerShape {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.answerText {
+  flex: 1;
+  text-align: left;
+}
+
+/* Colores tipo Kahoot */
+.answerButton.red {
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+
+.answerButton.red:hover:not(:disabled) {
+  background: #e74c3c;
+  color: white;
+}
+
+.answerButton.blue {
+  border-color: #3498db;
+  color: #3498db;
+}
+
+.answerButton.blue:hover:not(:disabled) {
+  background: #3498db;
+  color: white;
+}
+
+.answerButton.yellow {
+  border-color: #f1c40f;
+  color: #f39c12;
+}
+
+.answerButton.yellow:hover:not(:disabled) {
+  background: #f1c40f;
+  color: white;
+}
+
+.answerButton.green {
+  border-color: #2ecc71;
+  color: #2ecc71;
+}
+
+.answerButton.green:hover:not(:disabled) {
+  background: #2ecc71;
+  color: white;
+}
+
+/* Estados de respuesta */
+.answerButton.correct {
+  background: #2ecc71 !important;
+  color: white !important;
+  border-color: #27ae60 !important;
+  transform: scale(1.05);
+  animation: correctAnswer 0.5s ease;
+}
+
+.answerButton.incorrect {
+  background: #e74c3c !important;
+  color: white !important;
+  border-color: #c0392b !important;
+  animation: shake 0.5s ease;
+}
+
+.answerButton.disabled {
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+/* ===== SECCIÓN DE DATO CURIOSO ===== */
+.factSection {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.factCard {
+  background: white;
+  border-radius: 30px;
+  padding: 50px 40px;
+  text-align: center;
+  max-width: 600px;
+  margin: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.5s ease;
+}
+
+.factIcon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  animation: bounce 1s infinite;
+}
+
+.factCard h3 {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.factCard p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.nextButton {
+  background: linear-gradient(135deg, #4ecdc4, #44a08d);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nextButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(78, 205, 196, 0.4);
+}
+
+/* ===== PANTALLA DE RESULTADOS ===== */
+.resultsScreen {
+  background: white;
+  border-radius: 30px;
+  padding: 60px 40px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  animation: bounceIn 1s ease;
+}
+
+.resultsIcon {
+  font-size: 6rem;
+  margin-bottom: 30px;
+  animation: bounce 2s infinite;
+}
+
+.resultsTitle {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.scoreCard {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.finalScore {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.scoreText {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.progressBarFinal {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progressFillFinal {
+  height: 100%;
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+  border-radius: 6px;
+  transition: width 2s ease;
+}
+
+.resultMessage {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.playAgainButton {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+}
+
+.playAgainButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(-50px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes correctAnswer {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
     transform: translateY(-5px);
+  }
 }
 
-.districtImage {
-    position: relative;
-    overflow: hidden;
-}
-
-.districtName {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background: rgba(46, 125, 50, 0.9);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    backdrop-filter: blur(10px);
-}
-
-.districtName h3 {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.questionArea {
-    padding: 40px;
-}
-
-.questionArea h4 {
-    color: #2E7D32;
-    font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 1.4;
-}
-
-.optionsGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-bottom: 30px;
-}
-
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-    .optionsGrid {
-        grid-template-columns: 1fr;
-    }
-    
-    .questionArea {
-        padding: 30px 20px;
-    }
-}
+  .kahootContainer {
+    padding: 10px 0;
+  }
 
-.optionButton {
-    background: #f8f9fa;
-    border: 2px solid #e9ecef;
-    border-radius: 12px;
-    padding: 15px 20px;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #495057;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: left;
-}
+  .welcomeScreen,
+  .resultsScreen {
+    padding: 40px 20px;
+    margin: 10px;
+  }
 
-.optionButton:hover {
-    background: #e3f2fd;
-    border-color: #2E7D32;
-    color: #2E7D32;
-    transform: translateY(-2px);
-}
+  .gameTitle {
+    font-size: 2.2rem;
+  }
 
-.optionButton:disabled {
-    cursor: not-allowed;
-}
-
-.optionButton.correct {
-    background: #c8e6c9;
-    border-color: #4CAF50;
-    color: #2E7D32;
-    transform: scale(1.02);
-}
-
-.optionButton.incorrect {
-    background: #ffcdd2;
-    border-color: #f44336;
-    color: #c62828;
-    transform: scale(0.98);
-}
-
-.factBox {
-    background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
-    border: 2px solid #4CAF50;
-    border-radius: 15px;
-    padding: 25px;
-    margin-top: 20px;
-    animation: fadeInUp 0.5s ease;
-}
-
-.factBox h5 {
-    color: #2E7D32;
-    margin-bottom: 10px;
-    font-weight: 600;
+  .gameSubtitle {
     font-size: 1.1rem;
-}
+  }
 
-.factBox p {
-    color: #555;
-    margin: 0;
-    line-height: 1.6;
-}
+  .gameInfo {
+    flex-direction: column;
+    gap: 15px;
+  }
 
-.gameCompleted {
-    background: white;
-    border-radius: 20px;
-    padding: 60px 40px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-}
+  .infoItem {
+    padding: 12px 16px;
+  }
 
-.scoreDisplay h3 {
-    color: #2E7D32;
-    font-weight: 700;
-    font-size: 2rem;
-}
+  .startButton,
+  .playAgainButton {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+  }
 
-.progressBar {
-    width: 100%;
-    height: 12px;
-    background: #e9ecef;
-    border-radius: 6px;
-    overflow: hidden;
-    margin: 20px 0;
-}
+  .answersGrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 
-.progressFill {
-    height: 100%;
-    background: linear-gradient(90deg, #2E7D32, #4CAF50, #66BB6A);
-    border-radius: 6px;
-    transition: width 1s ease;
-    position: relative;
-}
-
-.progressFill::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.2) 50%, transparent 70%);
-    animation: shine 2s infinite;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes shine {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
-}
-
-/* Botones personalizados */
-.gameCard .tp-btn-sm,
-.gameCompleted .tp-btn-sm {
-    background: linear-gradient(135deg, #2E7D32, #4CAF50);
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 25px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  .answerButton {
+    padding: 20px 15px;
     font-size: 1rem;
+    min-height: 80px;
+  }
+
+  .questionText h2 {
+    font-size: 1.4rem;
+  }
+
+  .timerCircle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .timerText {
+    font-size: 1.5rem;
+  }
+
+  .questionCounter,
+  .scoreDisplay {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+
+  .factCard {
+    padding: 30px 20px;
+    margin: 10px;
+  }
+
+  .factCard h3 {
+    font-size: 1.5rem;
+  }
+
+  .factCard p {
+    font-size: 1rem;
+  }
+
+  .resultsTitle {
+    font-size: 2.2rem;
+  }
+
+  .finalScore {
+    font-size: 3rem;
+  }
+
+  .scoreCard {
+    padding: 30px 20px;
+  }
 }
 
-.gameCard .tp-btn-sm:hover,
-.gameCompleted .tp-btn-sm:hover {
-    background: linear-gradient(135deg, #1B5E20, #2E7D32);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3);
-}
+@media (max-width: 480px) {
+  .gameHeader {
+    padding: 15px 0;
+  }
 
-/* Responsive para móviles */
-@media (max-width: 576px) {
-    .gameCompleted {
-        padding: 40px 20px;
-    }
-    
-    .scoreDisplay h3 {
-        font-size: 1.5rem;
-    }
-    
-    .districtName {
-        bottom: 10px;
-        left: 10px;
-        padding: 8px 15px;
-    }
-    
-    .districtName h3 {
-        font-size: 1rem;
-    }
+  .gameHeader .row > div {
+    margin-bottom: 10px;
+  }
+
+  .gameHeader .col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center !important;
+  }
+
+  .questionText {
+    padding: 20px 15px;
+  }
+
+  .answerButton {
+    padding: 15px 12px;
+    gap: 15px;
+  }
+
+  .answerShape {
+    font-size: 1.5rem;
+  }
 }

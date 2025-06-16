@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Hojancha - Naturaleza y Belleza",
 };
 
-export default async function CityHotelPage() {
+export default async function HomePage() {
   return (
     <main>
 

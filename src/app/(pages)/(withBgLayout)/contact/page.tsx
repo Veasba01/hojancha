@@ -1,10 +1,9 @@
 import { Metadata } from "next";
 import ContactArea from "@/components/contact/contact-area";
-import ContactItemArea from "@/components/contact/contact-item-area";
-
 
 export const metadata: Metadata = {
-    title: "Contact Page - Housey",
+    title: "Contacto - Descubre Hojancha",
+    description: "Contacta con nosotros para conocer más sobre los 5 distritos de Hojancha: Puerto Carrillo, Monte Romo, Huacas, Matambú y Hojancha Centro"
 };
 
 
@@ -17,7 +16,7 @@ export default function ContactPage() {
             {/* contact area end */}
 
             {/* contact item area start */}
-            <ContactItemArea/>
+             
             {/* contact item area end */}
 
         </>

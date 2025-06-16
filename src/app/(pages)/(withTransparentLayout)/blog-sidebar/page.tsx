@@ -4,7 +4,7 @@ import BlogStandardArea from "@/components/blog/blog-standard-area";
 
 
 export const metadata: Metadata = {
-    title: "Blog Sidebar Page - Housey",
+    title: "Blog - Hojancha",
 }
 
 export default function BlogGridPage() {
