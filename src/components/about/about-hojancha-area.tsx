@@ -13,7 +13,7 @@ export default function AboutHojanchaArea() {
         {
             name: "Hojancha Central",
             image: hojancha_img,
-            description: "El corazón del cantón, centro administrativo y cultural con más de 175 años de historia.",
+            description: "El corazón del cantón, centro administrativo y cultural con más de 54 años de historia.",
             features: ["Centro administrativo", "Tradición cafetera", "Patrimonio histórico"]
         },
         {
@@ -53,10 +53,10 @@ export default function AboutHojanchaArea() {
                                 Descubre Hojancha
                             </h5>
                             <h2 className="tp-section-two-title wow fadeInUp" data-wow-delay=".4s" data-wow-duration="1s">
-                                Más de 175 años de historia, naturaleza y cultura
+                                Más de 54 años de historia, naturaleza y cultura
                             </h2>
                             <p className="mb-30 wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1s">
-                                Hojancha, fundado en 1848, es un cantón que representa la esencia auténtica de Costa Rica. 
+                                Hojancha, fundado en 1971, es un cantón que representa la esencia auténtica de Costa Rica. 
                                 Ubicado en la hermosa provincia de Guanacaste, nuestros cinco distritos únicos ofrecen 
                                 desde playas vírgenes hasta montañas cafeteras, pasando por rica herencia arqueológica 
                                 y tradiciones que perduran en el tiempo.
@@ -124,8 +124,8 @@ export default function AboutHojanchaArea() {
                                             <i className="fa-solid fa-calendar" style={{ fontSize: '1.2rem' }}></i>
                                         </div>
                                         <div>
-                                            <h6 style={{ margin: '0', color: '#2E7D32' }}>Desde 1848</h6>
-                                            <span style={{ fontSize: '0.9rem', color: '#666' }}>175+ años</span>
+                                            <h6 style={{ margin: '0', color: '#2E7D32' }}>Desde 1971</h6>
+                                            <span style={{ fontSize: '0.9rem', color: '#666' }}>54+ años</span>
                                         </div>
                                     </div>
                                 </div>

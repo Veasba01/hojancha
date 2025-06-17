@@ -4,7 +4,7 @@ export const home_blog_data: IBlog[] = [
   {
     id: 1,
     date: "Enero 15, 2025",
-    title: "Descubre los senderos secretos de Monte Romo",
+    title: "Descubre Monte Romo",
     description:
       "Explora los paisajes montañosos y la biodiversidad única del distrito más elevado de Hojancha.",
     imgSrc: "/assets/img/gellary/hojancha/DMonte Romo Modificado (1).png",
@@ -18,7 +18,7 @@ export const home_blog_data: IBlog[] = [
       geography: "El distrito se caracteriza por sus montañas onduladas, quebradas profundas y una red hidrográfica que incluye varios ríos y nacientes. La topografía montañosa crea microclimas únicos que favorecen tanto la agricultura como la biodiversidad. Las elevaciones más altas ofrecen vistas espectaculares hacia el océano Pacífico y las montañas circundantes.",
       culture: "La cultura de Monte Romo está profundamente arraigada en la tradición cafetera. Los habitantes mantienen técnicas ancestrales de cultivo y procesamiento del café, transmitidas de generación en generación. La hospitalidad guanacasteca se mezcla con el orgullo por su café de altura, creando una identidad cultural única.",
       attractions: [
-        "Senderos de montaña con vistas panorámicas",
+        "Montaña con vistas panorámicas",
         "Plantaciones de café orgánico",
         "Miradores naturales hacia el Golfo de Nicoya",
         "Cascadas y pozas naturales",
@@ -41,7 +41,7 @@ export const home_blog_data: IBlog[] = [
         "Visitar durante la época seca (diciembre-abril) para mejores vistas",
         "Participar en tours de café durante la cosecha (noviembre-febrero)",
         "Llevar ropa abrigada para las mañanas frescas",
-        "Contratar guías locales para los senderos de montaña",
+        
         "Probar el café local en las fincas familiares"
       ],
       accessibility: "El acceso a Monte Romo se realiza por carreteras de montaña en buen estado. Se recomienda vehículo 4x4 para llegar a las fincas más alejadas. La distancia desde Hojancha centro es de aproximadamente 15 kilómetros."
@@ -315,7 +315,7 @@ export const blog_postbox_data: IBlog[] = [
     date: "Febrero 15, 2025",
     title: "Historia y patrimonio cultural de Hojancha",
     description:
-      "Conoce la rica historia de Hojancha, desde sus orígenes en 1848 hasta convertirse en un cantón próspero con más de 175 años de tradición costarricense. Descubre los acontecimientos históricos, personajes importantes y el desarrollo cultural que han forjado la identidad de nuestros cinco distritos.",
+      "Conoce la rica historia de Hojancha, desde sus orígenes en 1848 hasta convertirse en un cantón próspero con más de 54 años de tradición costarricense. Descubre los acontecimientos históricos, personajes importantes y el desarrollo cultural que han forjado la identidad de nuestros cinco distritos.",
     imgSrc: "/assets/img/gellary/hojancha/img_20171027_153533.jpg",
     authorImg: "/assets/img/blog/blog-sidebar/user.png",
     authorName: "Prof. Manuel Herrera",
@@ -381,7 +381,6 @@ export const blog_postbox_data: IBlog[] = [
       attractions: [
         "Miradores panorámicos hacia el Golfo de Nicoya",
         "Tours de café desde la semilla hasta la taza",
-        "Senderos de montaña entre cafetales",
         "Fincas cafeteras históricas familiares",
         "Cascadas escondidas en las montañas",
         "Bosques de galería con biodiversidad única",
@@ -411,7 +410,7 @@ export const blog_postbox_data: IBlog[] = [
         "Participar en tours de café con familias productoras",
         "Llevar cámara para capturar las vistas panorámicas",
         "Probar diferentes variedades de café en las fincas",
-        "Caminar por los senderos de montaña temprano en la mañana",
+        
         "Comprar café directamente a los productores"
       ],
       accessibility: "Acceso por carreteras de montaña desde Hojancha centro (15 km). Algunas fincas requieren vehículo 4x4. Los miradores principales son accesibles en vehículo convencional. Se recomienda contratar tours con guías locales para aprovechar al máximo la experiencia."

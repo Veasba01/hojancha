@@ -75,7 +75,7 @@ export default function AdventuresArea() {
                                 <Image src={rain_box} alt="rainbox" />
                                 <br />
                                 Hojancha Quieres Explorar?</h2>
-                            <p className="tp-adventures-para">Hojancha te ofrece una experiencia única en Costa Rica desde 1848. Con más de <b>175 años</b> de historia, nuestros 5 distritos albergan una rica biodiversidad y tradiciones cafetaleras auténticas.</p>
+                            <p className="tp-adventures-para">Hojancha te ofrece una experiencia única en Costa Rica desde 1971. Con más de <b>54 años</b> de historia, nuestros 5 distritos albergan una rica biodiversidad y tradiciones cafetaleras auténticas.</p>
                         </div>
                         <div className="row">
 
