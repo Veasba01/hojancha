@@ -11,7 +11,7 @@ export default function GameArea() {
     const [showResult, setShowResult] = useState(false);
     const [gameCompleted, setGameCompleted] = useState(false);
     const [showFact, setShowFact] = useState(false);
-    const [timeLeft, setTimeLeft] = useState(20);
+    const [timeLeft, setTimeLeft] = useState(50); // Cambiado de 20 a 50 segundos
     const [gameStarted, setGameStarted] = useState(false);
 
     // Timer effect
@@ -28,7 +28,6 @@ export default function GameArea() {
     }, [timeLeft, gameStarted, showResult, gameCompleted]);
 
     const handleTimeUp = () => {
-        setSelectedAnswer(null);
         setShowResult(true);
         setTimeout(() => {
             setShowFact(true);
@@ -37,7 +36,7 @@ export default function GameArea() {
 
     const startGame = () => {
         setGameStarted(true);
-        setTimeLeft(20);
+        setTimeLeft(50); // Cambiado de 20 a 50 segundos
     };
 
     const handleAnswer = (answerIndex: number) => {
@@ -61,7 +60,7 @@ export default function GameArea() {
             setSelectedAnswer(null);
             setShowResult(false);
             setShowFact(false);
-            setTimeLeft(20);
+            setTimeLeft(50); // Cambiado de 20 a 50 segundos
         } else {
             setGameCompleted(true);
         }
@@ -74,7 +73,7 @@ export default function GameArea() {
         setShowResult(false);
         setGameCompleted(false);
         setShowFact(false);
-        setTimeLeft(20);
+        setTimeLeft(50); // Cambiado de 20 a 50 segundos
         setGameStarted(false);
     };
 
@@ -100,7 +99,7 @@ export default function GameArea() {
                                     </div>
                                     <div className={styles.infoItem}>
                                         <span className={styles.infoIcon}>⏱️</span>
-                                        <span>20 segundos por pregunta</span>
+                                        <span>50 segundos por pregunta</span> {/* Cambiado de 20 a 50 segundos */}
                                     </div>
                                     <div className={styles.infoItem}>
                                         <span className={styles.infoIcon}>🏆</span>
@@ -126,7 +125,7 @@ export default function GameArea() {
         const percentage = (score / gameData.length) * 100;
         let message = "";
         let emoji = "";
-        
+
         if (percentage >= 80) {
             message = "¡Increíble! Eres un súper explorador de Hojancha";
             emoji = "🏆";
@@ -247,13 +246,12 @@ export default function GameArea() {
                                     {currentData.options.map((option, index) => {
                                         const colors = ['red', 'blue', 'yellow', 'green'];
                                         const shapes = ['🔺', '🔷', '⬥', '⭕'];
-                                        
                                         let buttonClass = `${styles.answerButton} ${styles[colors[index]]}`;
                                         
                                         if (showResult && selectedAnswer !== null) {
                                             if (index === currentData.correct) {
                                                 buttonClass += ` ${styles.correct}`;
-                                            } else if (index === selectedAnswer && index !== currentData.correct) {
+                                            } else if (index !== currentData.correct && index === selectedAnswer) {
                                                 buttonClass += ` ${styles.incorrect}`;
                                             } else {
                                                 buttonClass += ` ${styles.disabled}`;

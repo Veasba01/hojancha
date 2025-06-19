@@ -1,20 +1,13 @@
 import { ICheckoutForm } from "@/types/form-d-t";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import { useState } from "react";
-import axiosInstance from "@/lib/axios";
 import useGlobalContext from "./use-global-context";
 import { notifyError, notifySuccess } from "@/utils/toast";
 
 export default function useCheckoutSubmit(paymentIntentData: string) {
   const [loading, setLoading] = useState(false);
-  const searchParams = useSearchParams();
-  const checking = searchParams.get("checkin");
-  const checkout = searchParams.get("checkout");
-  const adults = searchParams.get("adults");
-  const children = searchParams.get("children");
-  const hotelId = searchParams.get("hotelId");
   const { userInfo } = useGlobalContext();
   const router = useRouter();
 
@@ -44,7 +37,6 @@ export default function useCheckoutSubmit(paymentIntentData: string) {
     }
 
     if (!paymentIntentData) {
-      //   toast.error("Payment intent client_secret is missing.");
       notifyError("Error creating payment intent");
       return;
     }
@@ -72,49 +64,18 @@ export default function useCheckoutSubmit(paymentIntentData: string) {
     }
 
     if (paymentIntent) {
-      try {
-        // Directly use the result of the mutation
-        const saveOrderResult = await axiosInstance.post("/booking/create", {
-          hotelId: hotelId,
-          userId: userInfo.user.id,
-          checkin: checking,
-          checkout: checkout,
-          adults: adults,
-          children: children,
-          userDetails: values,
-        });
-
-        // Check the returned result from the saveOrder function
-        if (saveOrderResult?.data) {
-          console.log(saveOrderResult.data, "saveOrderResult");
-          notifySuccess("Order saved successfully!");
-          router.push(`/booking/${saveOrderResult.data?.id}`);
-        } else {
-          notifyError(
-            saveOrderResult?.data?.message ||
-              "Failed to save order. Please try again."
-          );
-        }
-      } catch (err) {
-        console.error("Error saving order:", err);
-        const errMsg = err as { message: string };
-        notifyError(errMsg?.message || "Error saving order. Please try again.");
-      }
+      notifySuccess("Payment successful!");
+      reset();
+      router.push("/thank-you");
     }
-
-    setLoading(false); // Reset loading state after submission completes
-    reset();
+    setLoading(false); // Reset loading state after successful submission
   };
 
   return {
     register,
     handleSubmit,
-    errors,
     onSubmit,
-    checking,
-    checkout,
-    adults,
-    children,
+    errors,
     loading,
   };
 }

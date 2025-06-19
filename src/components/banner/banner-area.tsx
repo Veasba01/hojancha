@@ -42,7 +42,7 @@ export default function BannerArea() {
                                         <path d="M50.7129 6.69289C51.0956 6.85143 51.5343 6.66973 51.6929 6.28706C51.8514 5.90439 51.6697 5.46565 51.2871 5.30711L50.7129 6.69289ZM1.30577 6.16118C8.98516 2.73243 29.7128 -2.00744 50.7129 6.69289L51.2871 5.30711C29.818 -3.58748 8.6527 1.23814 0.694228 4.7915L1.30577 6.16118Z" fill="#2E7D32" />
                                     </svg>
                                 </span> actividades</h4>
-                                <Link className="tp-btn-square tp-btn-banner" href="/activities">Ver Actividades
+                                <Link className="tp-btn-square tp-btn-banner" href="/blog-sidebar">Ver Actividades
                                     <span className="ml-5">
                                         <UpArrow />
                                     </span>
@@ -66,7 +66,7 @@ export default function BannerArea() {
                                             <h5 className="tp-banner-title-pre tp-banner-title-pre-2">{banner.titlePre}</h5>
                                             <h2 className="tp-banner-title fs-40 mb-25">
                                                 {banner.title}
-                                            </h2>                                            <a className={`tp-btn-square tp-btn-banner ${banner.buttonClass}`} href={`/activities`}>
+                                            </h2>                                            <a className={`tp-btn-square tp-btn-banner ${banner.buttonClass}`} href={`/blog-sidebar`}>
                                                 {banner.buttonText}
                                                 <span className="ml-5">
                                                     <UpArrow />
